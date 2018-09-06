@@ -26,7 +26,7 @@ for c = 1:3
     siteCols(chMap.siteInds, c) = chanCols(:, c);
 end
 
-[h, P] = prb.plot(varargin{:}, 'siteColors', siteCols);
+[h, P] = probes.plots.plotProbe(prb, varargin{:}, 'siteColors', siteCols);
 
 v = chMap.enabled;
 if any(~v)
